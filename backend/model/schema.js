@@ -2,7 +2,7 @@ const mongoose =require("mongoose")
 
 
 const schema=mongoose.Schema({
-    shortid:{
+    shortId:{
         type:String,
         required:true,
         unique:true
