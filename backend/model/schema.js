@@ -12,10 +12,12 @@ const schema=mongoose.Schema({
         required:true
     },
     visithistory:[{
-          timestamp:true
+          timestamp:{
+            type:String
+          }
     }]
 },{timestamp:true})
 
-const model=schema.model("client",schema)
+const model=mongoose.model("client",schema)
 
 module.exports=model
