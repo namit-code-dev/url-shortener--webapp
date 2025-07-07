@@ -10,13 +10,9 @@ const schema=mongoose.Schema({
     redirecturl:{
         type:String,
         required:true
-    },
-    visithistory:[{
-          timestamp:{
-            type:String
-          }
-    }]
-},{timestamp:true})
+    }
+
+})
 
 const model=mongoose.model("client",schema)
 
