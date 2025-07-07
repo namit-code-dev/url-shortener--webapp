@@ -98,8 +98,25 @@ box-shadow: 0 0 20px rgba(0, 153, 255, 0.7);
   filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }
 
+#output{
+  display: flex;
+  align-items: center;
 
+  justify-content: center;
+}
 
+h3{
+  font: 1.5vw var(--font);
+}
+#output>h3>a>href{
+ font: 1em sans-serif;
+ color: #1a1a1a;
+ 
+}
+#output>label{
+  margin-top: 5vh;
+  margin-right:1vw ;
+}
 
 
 
@@ -125,11 +142,14 @@ box-shadow: 0 0 20px rgba(0, 153, 255, 0.7);
     margin-left: 2vh;
     size: 10px;
   }
+  
 
 }
 @media screen and (max-width:500px){
   #search-field{
- 
     margin-left: 3vw;
   }
+  h3{
+  font: 4vw sans-serif;
+}
 }
