@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const {handlerurlpost}=require("../controller/control")
+const {handlerurlpost,handlerdataprint}=require("../controller/control")
 
 router.post("/",handlerurlpost)
-
+router.get("/:id",handlerdataprint);
 module.exports=router
