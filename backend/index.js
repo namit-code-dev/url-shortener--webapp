@@ -22,3 +22,4 @@ connectdb("mongodb://127.0.0.1:27017/url-shortener-webapp")
 .catch((err)=>{console.log("error is :",err)})
 
 app.listen(port,() =>console.log("server started"))
+
