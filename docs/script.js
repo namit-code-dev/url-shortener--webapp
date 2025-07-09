@@ -24,7 +24,7 @@ function solve(){
   .then(data => {
     output.href= data.redirecturl
     output.target="_blank"
-    output_show.innerText= data.redirecturl
+    output_show.innerText= "http://localhost:8000/api/"+data.shortid
     console.log("Server response:", data);
   })
   .catch(error => {
