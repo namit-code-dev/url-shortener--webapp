@@ -117,7 +117,17 @@ h3{
   margin-top: 5vh;
   margin-right:1vw ;
 }
-
+#para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw;
+}
+#error{
+  margin-top: 3vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vw;
+}
 
 
 
@@ -142,6 +152,9 @@ h3{
     margin-left: 2vh;
     size: 10px;
   }
+  #error{
+  font-size: 2vw;
+}
   
 
 }
@@ -152,4 +165,5 @@ h3{
   h3{
   font: 4vw sans-serif;
 }
+
 }
