@@ -5,6 +5,7 @@ const app=express()
 const connectdb=require('./connection/connect')
 const router=require("./routes/routes")
 const cors=require("cors")
+require('dotenv').config();
 
 //for interface
 app.use(cors());
@@ -18,7 +19,8 @@ app.use("/api", router);
 
 
 //connection
-connectdb("mongodb://127.0.0.1:27017/url-shortener-webapp")
+console.log("MONGO_URL:", process.env.MONGO_URL);
+connectdb(process.env.MONGO_URL)
 .then(()=>{console.log("database connected")})
 .catch((err)=>{console.log("error is :",err)})
 
