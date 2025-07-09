@@ -13,7 +13,7 @@ function solve(){
     return;
   }
  
- fetch("https://url-shortnerapp-final.onrender.com/", {
+ fetch("https://url-shortnerapp-final.onrender.com/api/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
