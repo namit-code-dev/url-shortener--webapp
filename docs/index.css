@@ -60,7 +60,7 @@ padding-right: 15vw;
 }
 
 #search-field{
-  width: 55vw;
+  width: 75vw;
   height: 7vh;
    padding-left: 3vw;
   background-color: white;
@@ -72,19 +72,18 @@ padding-right: 15vw;
 }
 #search{
   height:10vh;
-  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 18vw;
+  margin-left: 13vw;
+  margin-right: 10vw;
   background-color: white;
   margin-top: 10vh;
   border-radius: 15px;
   padding: 1.4vw;
   background-color:#1a1a1a;
 box-shadow: 0 0 20px rgba(0, 153, 255, 0.7);
-
-
+ min-width: 20vw;
 }
 #svg>svg{
   padding-left: 2vh;
@@ -132,15 +131,6 @@ h3{
 
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (min-width:250px){
   .navbar svg{
       margin-left: 5vh;
@@ -155,6 +145,10 @@ h3{
   #error{
   font-size: 2vw;
 }
+#para{
+  font-size: 1.5vw;
+}
+
   
 
 }
