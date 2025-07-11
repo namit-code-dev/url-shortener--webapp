@@ -180,6 +180,7 @@ h3 {
 @media screen and (max-width:500px) {
   #search {
     width: 75vw;
+    margin-bottom: 2vh;
   }
 
   #search-field {
@@ -189,5 +190,8 @@ h3 {
   h3 {
     font: 4vw sans-serif;
   }
-
+#output{
+  display: inline;
+  margin-left: 80px;
+}
 }
