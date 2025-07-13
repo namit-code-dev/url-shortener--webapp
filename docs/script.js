@@ -13,7 +13,7 @@ function solve(){
     return;
   }
  
- fetch("https://url-shortnerapp-final.onrender.com/api/", {
+ fetch("https://url-jchl.onrender.com/", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -24,7 +24,7 @@ function solve(){
   .then(data => {
     output.href= data.redirecturl
     output.target="_blank"
-    output_show.innerText= "https://url-shortnerapp-final.onrender.com/api/"+data.shortid
+    output_show.innerText= "https://url-jchl.onrender.com/"+data.shortid
     console.log("Server response:", data);
   })
   .catch(error => {
