@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 //routes
-app.use("/api", router);
+app.use("/", router);
 
 
 //connection
@@ -23,5 +23,7 @@ connectdb(process.env.MONGO_URL)
 .then(()=>{console.log("database connected")})
 .catch((err)=>{console.log("error is :",err)})
 
-app.listen(port,() =>console.log("server started"))
+app.listen(port,() =>{
+   
+    console.log("server started")})
 
