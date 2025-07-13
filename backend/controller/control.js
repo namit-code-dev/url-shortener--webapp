@@ -35,4 +35,8 @@ async function handlerdataprint(req,res) {
  
 }
 
-module.exports={handlerurlpost,handlerdataprint}
+async function handlerserver(req,res) {
+  res.send("<h2>Hello from Namit url-shortener</h2>")
+}
+
+module.exports={handlerurlpost,handlerdataprint,handlerserver}

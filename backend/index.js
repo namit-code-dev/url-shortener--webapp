@@ -23,7 +23,5 @@ connectdb(process.env.MONGO_URL)
 .then(()=>{console.log("database connected")})
 .catch((err)=>{console.log("error is :",err)})
 
-app.listen(port,() =>{
-   
-    console.log("server started")})
+app.listen(port,() =>console.log("server started at https://url-jchl.onrender.com/"))
 
