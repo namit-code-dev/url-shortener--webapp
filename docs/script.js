@@ -12,6 +12,15 @@ function solve(){
     console.log("Search field is empty");
     return;
   }
+
+//for render cold start server
+let serverResponded = false;
+setTimeout(() => {
+  if (!serverResponded) {
+      errorarise.innerText="Server not started. Please wait one minute. The server is hosted on Render, so it may take up to a minute to restart if it was inactive."
+    alert("server on cold start please wait one minute")
+  }
+},4000);
  
  fetch("https://url-jchl.onrender.com/", {
   method: "POST",
@@ -22,13 +31,14 @@ function solve(){
 })
   .then(response => response.json())
   .then(data => {
+    serverResponded = true;
     output.href= data.redirecturl
     output.target="_blank"
     output_show.innerText= "https://url-jchl.onrender.com/"+data.shortid
     console.log("Server response:", data);
   })
   .catch(error => {
-    errorarise.innerText="Server not started. Please wait one minute. The server is hosted on Render, so it may take up to a minute to restart if it was inactive."
+    errorarise.innerText="Server not started. Please wait one minute."
     console.error("Error sending data:", error);
     alert("Server shut down. Please read the message below.")
     Showerror()
