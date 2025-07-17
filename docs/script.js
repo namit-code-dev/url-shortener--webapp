@@ -13,17 +13,6 @@ function solve(){
     return;
   }
 
-//for render cold start server
-let serverResponded = false;
-setTimeout(() => {
-  if (!serverResponded) {
-     errorarise.style.display = "block";
-      errorarise.innerText="Server not started. Please wait one minute. The server is hosted on Render, so it may take up to a minute to restart if it was inactive."
-    alert("server on cold start please wait one minute")
-  }
-    
-},3000);
- 
  fetch("https://url-jchl.onrender.com/", {
   method: "POST",
   headers: {
