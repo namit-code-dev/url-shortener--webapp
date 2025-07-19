@@ -62,6 +62,11 @@ url-shortnerapp/
 
 ---
 
+## NOTE
+ Note: This project was originally created under my previous GitHub account. Due to account change, the repository has been migrated here. All original commits and history are preserved.
+
+---
+
 ## Author
 
 **NAMIT YADAV**  
